@@ -5,19 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dark Mode To-Do List</title>
   <link rel="icon" type="image/png" href="depositphotos_425459756-stock-photo-to-do-list-icon-colored-removebg-preview.png" />
-
   <link rel="stylesheet" href="styles.css" />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
 </head>
-<body>
+<body class="dark">
   <div class="container">
     <h1>To-Do List</h1>
+
+    <!-- Theme toggle button -->
+    <div style="text-align: right; margin-bottom: 10px;">
+  <button id="theme-toggle-btn">
+    <i id="theme-icon" class="fas fa-moon"></i> Toggle Theme
+  </button>
+</div>
+
+
     <div class="input-container">
       <input type="text" id="todo-input" placeholder="Add a new task..." />
       <button id="add-task-btn">Add Task</button>
     </div>
-    <ul id="todo-list">
-        
-    </ul>
+    <ul id="todo-list"></ul>
   </div>
 
   <script src="script.js"></script>

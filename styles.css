@@ -86,4 +86,67 @@ h1 {
 .delete-btn:hover {
   background-color: #e0435f;
 }
+#theme-toggle-btn {
+  background-color: #3b3b3b;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#theme-toggle-btn:hover {
+  background-color: #5e5e5e;
+}
+
+#theme-icon {
+  font-size: 18px;
+}
+body.light {
+  background-color: #f4f4f4;
+  color: #121212;
+}
+
+body.light .container {
+  background-color: #ffffff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+body.light #todo-input,
+body.light #todo-list li {
+  background-color: #eeeeee;
+  color: #121212;
+}
+
+body.light #add-task-btn {
+  background-color: #6200ee;
+}
+
+body.light #add-task-btn:hover {
+  background-color: #3700b3;
+}
+
+body.light .delete-btn {
+  background-color: #d32f2f;
+}
+
+body.light .delete-btn:hover {
+  background-color: #b71c1c;
+}
+
+body.light #theme-toggle-btn {
+  background-color: #dddddd;
+  color: #121212;
+}
+
+body.light #theme-toggle-btn:hover {
+  background-color: #cccccc;
+}
+
+
 

@@ -2,12 +2,20 @@ document.addEventListener("DOMContentLoaded", () => {
     const todoInput = document.getElementById("todo-input");
     const addTask = document.getElementById("add-task-btn");
     const list = document.getElementById("todo-list");
-
+    const themeToggleBtn = document.getElementById("theme-toggle-btn");
     let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
     
     tasks.forEach(task => {
         renderTask(task);
     });
+    // Theme toggle functionality
+    themeToggleBtn.addEventListener("click",()=>{
+        document.body.classList.toggle("dark")
+        document.body.classList.toggle("light")
+        
+
+    })
+
 
     addTask.addEventListener("click", function () {
         let taskText = todoInput.value.trim();
